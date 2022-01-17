@@ -33,4 +33,9 @@ export class ContaCorrete{
         conta.cidade = "São Paulo";
         valor = 20;
     }
+
+    constructor(cliente, agencia){
+        this.agencia = agencia;
+        this.cliente = cliente;
+    }
 }
