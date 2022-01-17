@@ -1,6 +1,7 @@
 import { Cliente } from "./Cliente.js";
 
 export class ContaCorrete{
+    static numerodecontas = 0;
     agencia;
     _saldo = 0;
     _cliente;
@@ -35,6 +36,7 @@ export class ContaCorrete{
     }
 
     constructor(cliente, agencia){
+        ContaCorrete.numerodecontas++;
         this.agencia = agencia;
         this.cliente = cliente;
     }
