@@ -16,9 +16,10 @@ ContaCorrete1.cliente = cliente1;
 
 const ContaCorrete2 = new ContaCorrete();
 ContaCorrete2.agencia = 1002;
-ContaCorrete2.cliente = cliente2;
-
-ContaCorrete1.transferir(25, ContaCorrete2);
+ContaCorrete2.cliente = cliente1;
+let valor = 200;
+ContaCorrete1.transferir(valor, ContaCorrete2);
+console.log(valor);
 
 //console.log(cliente1);
 console.log(ContaCorrete1);
